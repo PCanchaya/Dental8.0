@@ -16,7 +16,7 @@ import DoctorsMobileFramerComponent from "./framer/doctors-mobile";
 import BookYourDentalSectionMobileFramerComponent from "./framer/book-your-dental-section-mobile";
 import LatestBlogMobileFramerComponent from "./framer/latest-blog-mobile";
 import FooterFramerComponent from "./framer/footer";
-import FooterLogoFramerComponent from "./framer/footer-logo";
+import FooterLogoFramerComponent from "../framer/footer-logo.jsx";
 
 // 💻 Desktop components
 import HeroWithCarouselsDesktopFramerComponent from "./framer/hero-with-carousels-desktop";
