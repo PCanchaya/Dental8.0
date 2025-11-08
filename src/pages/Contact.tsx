@@ -4,7 +4,7 @@ import HomeButtonFramerComponent from "../framer/home-button";
 
 import ContactSectionFramerComponent from "../framer/contact-section";
 import ContactFooterDesktopFramerComponent from "../framer/contact-footer-desktop";
-import ContactFooterMobileFramerComponent from "../framer/contact-footer-mobile";
+import ContactFooterMobileFramerComponent from "../../framer/contact-footer-mobile.jsx";
 import ContactBookYourDentalDesktopFramerComponent from "../framer/contact-book-your-dental-desktop";
 
 export default function ContactPage({

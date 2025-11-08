@@ -28,7 +28,7 @@ import { routes } from "./chunks/chunk-LUVZXV62.js";
 import { Fragment as Fragment2 } from "react";
 import { ContextProviders } from "unframer";
 
-// /:https://framerusercontent.com/modules/eIm4PtQ7mIh1vol2KQWu/FHWydMCHqCM5sBhpnM12/MwoM_l7k6.js
+// /:https://framerusercontent.com/modules/eIm4PtQ7mIh1vol2KQWu/Bf1kQsjfkN3X6JTK0ZxW/MwoM_l7k6.js
 import { jsx as _jsx } from "react/jsx-runtime";
 import {
 	addFonts,
@@ -43,7 +43,7 @@ import {
 import { LayoutGroup, motion, MotionConfigContext } from "unframer";
 import * as React from "react";
 import { useRef } from "react";
-var serializationHash = "framer-weWru";
+var serializationHash = "framer-PuJdo";
 var variantClassNames = {
 	AzfPpNePy: "framer-v-13ddxxd",
 };
@@ -149,15 +149,15 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 });
 var css = [
 	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
-	".framer-weWru.framer-1mw1lfy, .framer-weWru .framer-1mw1lfy { display: block; }",
-	".framer-weWru.framer-13ddxxd { height: 391px; overflow: visible; position: relative; width: 430px; }",
+	".framer-PuJdo.framer-1mw1lfy, .framer-PuJdo .framer-1mw1lfy { display: block; }",
+	".framer-PuJdo.framer-13ddxxd { height: 391px; overflow: visible; position: relative; width: 390px; }",
 ];
-var FramerMwoM_l7k6 = withCSS(Component, css, "framer-weWru");
+var FramerMwoM_l7k6 = withCSS(Component, css, "framer-PuJdo");
 var stdin_default = FramerMwoM_l7k6;
 FramerMwoM_l7k6.displayName = "Footer Logo";
 FramerMwoM_l7k6.defaultProps = {
 	height: 391,
-	width: 430,
+	width: 390,
 };
 addFonts(
 	FramerMwoM_l7k6,
