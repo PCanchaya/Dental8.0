@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import "./framer/styles.css";
 
 // Shared components
-import HeaderSection4FramerComponent from "./framer/header-section-4";
+import HeaderSection4FramerComponent from "../framer/header-section-4.jsx";
 import HomeButtonFramerComponent from "./framer/home-button";
 
 // 📱 Mobile components
@@ -27,9 +28,10 @@ import YourSmileSectionDesktopFramerComponent from "./framer/your-smile-section-
 import BookYourDentalDesktopFramerComponent from "./framer/book-your-dental-desktop";
 import LatestFromTheBlogFramerComponent from "./framer/latest-from-the-blog";
 import FooterDesktopFramerComponent from "./framer/footer-desktop";
+import ContactPage from "./pages/Contact";
 
 export default function App() {
-  const [isDesktop, setIsDesktop] = useState(null);
+  const [isDesktop, setIsDesktop] = useState<null | boolean>(null);
 
   useEffect(() => {
     const checkWidth = () => setIsDesktop(window.innerWidth >= 1020);
@@ -47,6 +49,15 @@ export default function App() {
   }
 
   return (
+    <Routes>
+      <Route path="/" element={<HomePage isDesktop={isDesktop} />} />
+      <Route path="/contact" element={<ContactPage isDesktop={isDesktop} />} />
+    </Routes>
+  );
+}
+
+function HomePage({ isDesktop }: { isDesktop: boolean | null }) {
+  return (
     <div className="flex flex-col items-center gap-3 bg-white">
       {/* 🧭 Header + Home Button */}
       <div
@@ -56,10 +67,10 @@ export default function App() {
       >
         {/* Home button — higher on mobile */}
         <div
-          className={`absolute z-[1] ${
+          className={`absolute z-[100] ${
             isDesktop
-              ? "left-8 top-[20px]" // desktop unchanged
-              : "left-2 top-[10px]" // higher on mobile
+              ? "left-8 top-[20px]"
+              : "left-2 top-[10px]"
           }`}
         >
           <HomeButtonFramerComponent.Responsive />
@@ -68,9 +79,7 @@ export default function App() {
         {/* Header (menu bar) */}
         <div
           className={`${
-            isDesktop
-              ? "absolute top-0 right-12 z-[50]"
-              : "relative z-[5]"
+            isDesktop ? "absolute top-0 right-12 z-[50]" : "relative z-[5]"
           }`}
         >
           <HeaderSection4FramerComponent.Responsive />
